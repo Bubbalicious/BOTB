@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="countdown.js"></script>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Contrail+One" rel="stylesheet">
+
+<title>BOTB</title>
+</head>
+
+<body> 
+  
+<div id='main'>
+      
+      <!--header starts-->                                                                                                                  
+      
+      <div id='header'>
+          <h1 class='inthemiddle'>Battle of the Bands</h1>
+      </div>
+      
+      <!--header ends-->
+      
+      <div class='navbar' style='text-align:center'>
+      			<div><a href="#">Home</a></div>
+                <div><a href="#">Tickets</a></div>
+                <div><a href="#">Lineup</a></div>
+                <div><a href="#">Information</a></div>
+                <div><a href="#">Shop</a></div>
+  	</div>
+    
+<div id="countdown"></div>
+
+<div id="intro">Battle of the Bands is an annual festival organised by the pupils of Harrogate Grammar School. Several bands from the school perform and are judged by the audience through anonymous voting. They then face three teachers, including the head, and the winner goes through to the national competition.</div>
+
+<div id="broke1">Broke Band Back</div>
+
+<div id="broke2">
+  <p>The band named ‘Broke’, a favourite among pupils, is rumoured to be returning for the third year in a row. ‘Broke’ consists of four energetic students who never fail to get the audience on their feet</p>
+</div>
+
+<div id="image">.<img src="../../Pictures/Web Design Pics/broke-band-2.jpg" width="256" height="141" /></div>
+
+<div id="vidinfo">2010's winners: Missing Link with 'Feeling Good'</div>
+
+<div id="video">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/brquKM_NwFU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
+
+</div>
+
+<script type="text/javascript">
+  $("#countdown")
+  .countdown("2018/06/16", function(event) {
+    $(this).text(
+      event.strftime('%D days %H hours %M minutes %S seconds')
+    );
+  });
+</script>
+
+</body>  
+  
+</html>
