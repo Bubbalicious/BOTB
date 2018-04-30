@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="countdown.js"></script>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Contrail+One" rel="stylesheet">
+
+<title>BOTB</title>
+</head>
+
+<body> 
+  
+<div id='main'>
+      
+      <!--header starts-->
+      <!--header ends-->
+      
+<div class='navbar' style='text-align:center'>
+      			<div><a href="index.html">Home</a></div>
+                <div><a href="tickets.html">Tickets</a></div>
+                <div><a href="lineup.html">Lineup</a></div>
+                <div><a href="information.html">Information</a></div>
+                <div><a href="shop.html">Shop</a></div>
+  	</div>
+    
+<div id="countdown"></div>
+
+<div id="intro"> </div>
+</div>
+<script type="text/javascript">
+  $("#countdown")
+  .countdown("2018/06/16", function(event) {
+    $(this).text(
+      event.strftime('%D days %H hours %M minutes %S seconds')
+    );
+  });
+  </script>
+</body>  
+  
+</html>
