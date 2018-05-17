@@ -132,10 +132,10 @@ a:active {
 }
 
 #vidinfo {
-	color: #FFF;
-	font-size: 2rem;
+	font-size: 3rem;
 	text-align: center;
 	margin-top:30px;
+	color: #C02834;
 }
 
 #table {
